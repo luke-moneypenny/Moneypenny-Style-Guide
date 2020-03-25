@@ -1,0 +1,126 @@
+html, body {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+	font-family: 'Public Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  margin: 6px 0px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #271833; 
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darken(#271833, 10%); 
+}
+
+.nav {
+	position: fixed;
+	width: 100%;
+	height: 150px;
+	background-color: #271833;
+	top: 0;
+	z-index: 99;
+
+	&__logo {
+		width: 240px;
+		padding: 20px 30px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__list {
+		list-style: none;
+    	position: absolute;
+    	bottom: 0;
+    	right: 30px;
+    	margin: 0;
+
+		&__item {
+			display: inline-block;
+			text-decoration: none;
+			padding: 20px 40px;
+			color: white;
+			font-size: 18px;
+			margin: 0px;
+			margin-right: -4px;
+			transition: background .3s ease, color .3s ease, border-top .3s ease;
+		}
+
+		a:hover > .nav__list__item, .nav__active {
+			background: white;
+			color: #271833;
+			border-top: solid 5px #FF5039;
+		}
+	}
+}
+
+.sidebar {
+	position: fixed;
+	width: 350px;
+	top: 150px;
+	height: calc(100% - 210px);
+	padding-bottom: 60px;
+	background-color: #271833;
+	overflow-y: auto;
+	direction: rtl;
+
+	&::-webkit-scrollbar {
+  		width: 10px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+  		background: white; 
+	}
+
+	&::-webkit-scrollbar-track {
+	  	margin: 0px;
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+		color: white;
+		padding: 15px 30px;
+		border-right: solid 5px transparent;
+		transition: background .3s ease, color .3s ease, border-right .3s ease;
+		direction: ltr;
+
+		&:hover {
+			background: white;
+			color: #271833;
+			border-right: solid 5px #FF5039;
+		}
+
+	}
+}
+
+.content {
+	left: 350px;
+	width: calc(100% - 350px);
+	height: 100%;
+	position: relative;
+
+	&__slide {
+		height: calc(100% - 150px);
+		padding-top: 150px;
+
+		&__container {
+    		width: calc(100% - 120px);
+    		height: calc(100vh - 240px);
+			padding: 30px 60px 60px;
+			position: absolute;
+			overflow-y: auto;
+		}	
+	}
+}
