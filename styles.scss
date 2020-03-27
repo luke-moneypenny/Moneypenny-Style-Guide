@@ -22,6 +22,26 @@ html, body {
   background: darken(#271833, 10%); 
 }
 
+p {
+	margin: 15px 0px;
+}
+
+.fnt-s {
+	font-size: 14px;
+}
+
+.fnt-m {
+	font-size: 18px;
+}
+
+.fnt-l {
+	font-size: 24px;
+}
+
+.fnt-xl {
+	font-size: 36px;
+}
+
 .nav {
 	position: fixed;
 	width: 100%;
@@ -123,4 +143,40 @@ html, body {
 			overflow-y: auto;
 		}	
 	}
+}
+
+.colourPod {
+	display: grid;
+	grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 20px;
+
+    &__top {
+    	grid-column: 1/4;
+    	color: #271833;
+
+    	h2 {
+    		display: inline-block;
+    		margin-right: 20px;
+    	} 
+
+    	p {
+    		display: inline-block;
+    		margin-right: 20px;
+    	}
+    }
+
+    &__white {
+    	padding: 10px 20px;
+    }
+
+    &__whitetext {
+    	padding: 10px 20px;
+    	color: #FFF;
+    }
+
+    &__darktext {
+    	padding: 10px 20px;
+    	color: #271833;
+    }
 }

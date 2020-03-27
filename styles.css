@@ -17,6 +17,21 @@ html, body {
 ::-webkit-scrollbar-thumb:hover {
   background: #0c0810; }
 
+p {
+  margin: 15px 0px; }
+
+.fnt-s {
+  font-size: 14px; }
+
+.fnt-m {
+  font-size: 18px; }
+
+.fnt-l {
+  font-size: 24px; }
+
+.fnt-xl {
+  font-size: 36px; }
+
 .nav {
   position: fixed;
   width: 100%;
@@ -95,3 +110,31 @@ html, body {
       padding: 30px 60px 60px;
       position: absolute;
       overflow-y: auto; }
+
+.colourPod {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
+  margin-bottom: 20px; }
+  .colourPod__top {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    color: #271833; }
+    .colourPod__top h2 {
+      display: inline-block;
+      margin-right: 20px; }
+    .colourPod__top p {
+      display: inline-block;
+      margin-right: 20px; }
+  .colourPod__white {
+    padding: 10px 20px; }
+  .colourPod__whitetext {
+    padding: 10px 20px;
+    color: #FFF; }
+  .colourPod__darktext {
+    padding: 10px 20px;
+    color: #271833; }
