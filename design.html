@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Public+Sans:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://kit.fontawesome.com/e3e3f3a6ac.js" crossorigin="anonymous"></script>
 
 
 	<!-- Include Handlebars from a CDN -->
@@ -147,37 +148,5 @@
 	</section>
 
 </body>
-
-<!---------- Handlebars.js Templates ---------->
-
-<!-- Colours -->
-<script id="hbColoursTemplate" type="text/x-handlebars-template">
-    {{#each colour}}
-		<div class="colourPod">
-			<div class="colourPod__top" style="border-bottom: solid 5px {{this.hex}};">
-				<h2>{{this.var}}</h2>
-				<p>{{this.hex}}</p>
-			</div>
-			<div class="colourPod__white">
-				<p class="fnt-s" style="color:{{this.hex}};">Small font</p>
-				<p class="fnt-m" style="color:{{this.hex}};">Medium font</p>
-				<p class="fnt-l" style="color:{{this.hex}};">Large font</p>
-				<p class="fnt-xl" style="color:{{this.hex}};">Extra large font</p>
-			</div>
-			<div class="colourPod__whitetext" style="background-color: {{this.hex}};">
-				<p class="fnt-s">Small font</p>
-				<p class="fnt-m">Medium font</p>
-				<p class="fnt-l">Large font</p>
-				<p class="fnt-xl">Extra large font</p>
-			</div>
-			<div class="colourPod__darktext" style="background-color: {{this.hex}};">
-				<p class="fnt-s">Small font</p>
-				<p class="fnt-m">Medium font</p>
-				<p class="fnt-l">Large font</p>
-				<p class="fnt-xl">Extra large font</p>
-			</div>
-		</div>
-  	{{/each}}
-</script>
-
+<script> </script>
 </html>
